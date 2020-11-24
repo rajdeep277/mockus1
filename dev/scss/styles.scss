@@ -1,0 +1,692 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;box-sizing: border-box;
+}
+body{
+	font-family: arial, sans-serif;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/bg.jpg);
+} 
+.header{
+	top: 0;
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	margin: 0;
+	height: 60px;
+	background-color: #F8F6F6;
+
+	#logo{
+		float: left;
+		height: 30px;
+		width: 40px;
+
+	}
+	#menu{
+		/*position: absolute;*/
+		float: right;
+		height: 30px;
+		width: 40px;
+	}
+	#search{
+		display: none;
+	}
+}
+#searchnavright{
+	display: none;
+}
+.container{
+	position: relative;
+	display: block;
+	.images{
+		display: block;
+		margin-bottom: 2px;
+		margin-top: 10px;
+	
+		.image1{
+			width: 95%;
+			height: 250px;
+			position: relative;
+			margin-bottom: 7px;
+			background-image: url(../images/mussel-small.jpg);
+			background-repeat: no-repeat;
+		    background-size: cover;
+		    background-position: 50% 50%;
+		}
+		.desc{
+			width: 100%;
+			height: auto;
+			font-size: 21px;
+			padding: 15px;
+			position: absolute;
+			bottom: 0;
+			background-color: rgba(23, 7, 3, 0.7);
+			text-align: left;
+			color: white;
+		}	
+		.image2{
+			width: 95%;
+			height: 250px;
+			position: relative;
+			margin-bottom: 7px;
+			background-image: url(../images/salad.jpg);
+			background-repeat: no-repeat;
+		    background-size: cover;
+		    background-position: 50% 50%;
+		}
+		.image3{
+			width: 95%;
+			height: 250px;
+			position: relative;
+			margin-bottom: 7px;
+			background-image: url(../images/pancake.jpg);
+			background-repeat: no-repeat;
+		    background-size: cover;
+		    background-position: 50% 50%;
+		}
+	}
+
+	.recipe{
+		width: 95%;
+		height: auto;
+		position: relative;
+		background-color: white;
+		margin-bottom: 10px;
+	
+
+		.title{
+			width: 100%;
+			height: auto;
+			font-size: 25px;
+			padding: 10px;
+			background-color: #0C69B3;
+			color: white;
+			text-align: left;
+
+		}
+		.recipe1{
+			width: 100%;
+			height: 80px;
+			position: relative;
+		}
+				
+		img{
+			width: auto;
+			left: 0;
+			position: absolute;
+			margin: 10px;
+			border: 2px solid blue;
+		}
+		label{
+			position: absolute;
+			font-size: 18px;
+			left: 80px;
+			margin-top: 30px;
+			margin-left: 5px;
+		}
+			
+		.recipe2{
+			width: 100%;
+			height: 80px;
+			position: relative;
+			background-color: #E9E7E7;
+		}
+	}
+	.cuisines{
+		width: 95%;
+		height: auto;
+		position: relative;
+		background-color: white;
+		margin-bottom: 10px;
+	
+		.title{
+			width: 100%;
+			height: auto;
+			font-size: 25px;
+			padding: 10px;
+			background-color: #0C69B3;
+			color: white;
+			text-align: left;
+
+		}
+		.list{
+			position: relative;
+		
+			ul{
+				-webkit-column-count: 3;
+				-moz-column-count: 3;
+				column-count: 3;
+				margin-right: 30px;
+			
+
+				li{
+					position: relative;
+					list-style: none;
+					padding: 10px;
+					
+				}
+			}
+		}
+	}
+	.post{
+		width: 95%;
+		height: 440px;
+		position: relative;
+		background-color: white;
+		margin-bottom: 5px;
+		padding: 10px;
+	
+
+		.h1{
+			text-align: left;
+			text-transform: uppercase;
+			color: #0C69B3;
+			margin-bottom: 8px;
+
+		}
+		p{
+			text-align: left;
+
+		}
+		img{
+			width: 95%;
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		input{
+			float: right;
+			background-color: #0C69B3;
+			color: white;
+			padding: 10px;
+			margin-right: 10px;
+		}
+	}
+		
+	.old-posts{
+		width: 100%;
+		height: 100px;
+	
+		img{
+			margin-left: 10px;
+			padding:50px 0;
+		}
+	}
+	
+	.footer{
+		width: 100%;
+		height: 100px;
+		background-color: #0C69B3;
+		color: white;
+		padding-top: 30px;
+		
+	}
+}
+	@media screen and (max-width: 499px) {
+		#searchnavleft{
+			width: 100%;
+			background-color: #E0DDDD;
+			height: 50px;
+			border: 2px solid #0B3D53;
+
+		}
+		#label-search{
+			position: relative;
+			font-size: 18px;
+			padding: 10px;
+			color: #4D4F50;
+			float: left;
+		}
+		#search-icon{
+			width: 30px;
+			height: 30px;
+			margin: 10px;
+			float: right;
+		}
+		.icons{
+			display: none;
+		}
+		.nav-bar{
+			display: none;
+		
+			.nav-bar ul{
+				display: block;
+			
+				li{
+					height: 50px;
+					background-color: #0C69B3;
+					text-align: center;
+					border-bottom:2px solid #0B3D53;
+					padding: 10px;
+					
+					a{
+						color: white;
+						font-size: 20px;
+
+					}
+				}
+				li:hover a{
+					background-color: white;
+					color: blue;
+					width: 100%; 
+				}
+			}
+		}
+		
+		.icons-phone{
+			background-color: white;
+			padding: 10px;
+			height: 50px;
+			font-size: 30px;
+			color: #0C69B3;
+			border-bottom:2px solid #0B3D53;
+		}
+
+	}
+	
+	@media screen and (min-width: 300px) {
+		#logo{
+			content: url("../images/logo.png") !important;
+			width: 65%;
+			float: left;
+		}
+		#menu{
+			float: right;
+		}
+		#search{
+			display: none;
+		}
+		#searchnavright{
+			display: none;
+		}
+		.icons{
+			display: none;
+		}
+		.post{
+			height: 400px;
+		}
+		.list ul{
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+			margin-right: 50px;
+		}
+	}
+	@media screen and (min-width: 500px) {
+		#logo{
+			content: url("../images/logo.png") !important;
+			width: 65%;
+			float: left;
+		}
+		#menu{
+			display: none;
+
+		}
+		#search{
+			width: 30%;
+			height: 35px;
+			padding: 5px;
+			display: block;
+			font-size: 18px;
+			background-color: #E0DDDD;
+			float: right;
+			border-radius: 5px;
+		}
+		#searchnavright, #searchnavleft{
+			display: none;
+		}
+		.icons-phone{
+			display: none;
+		}
+		#label-search{
+			position: relative;
+			margin-top: 10px;
+			padding-bottom: 10px;
+			color: #4D4F50;
+		}
+		#search-icon{
+			width: 20px;
+			height: 20px;
+			float: right;
+		}
+		.icons{
+			display: none;
+		}
+		.nav{
+			background-color: #0C69B3;
+			width: 100%;
+			height: 40px;
+			text-align: center;
+		
+			.nav-bar{
+				background-color: #1681AF;
+				width: 95%;
+				height: 40px;
+			
+				ul{
+					margin: 0;
+					width: 90%;
+					padding: 0;
+					display: flex;
+					justify-content: space-between;
+				
+					li{
+						margin: 10px;
+						height: 50px;
+					
+						a{
+							color: white;
+						}
+					}
+				}
+			}
+		}
+		.list ul{
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+			margin-right: 80px;
+		}
+
+
+
+	}
+	@media screen and (min-width: 700px) {
+		#logo{
+			content: url("../images/logo.png") !important;
+			width: 40%;
+			float: left;
+		}
+		#menu{
+			display: none;
+
+		}
+		#search{
+			width: 30%;
+			height: 35px;
+			padding: 5px;
+			display: block;
+			float: left;
+			margin-left: 40px;
+			font-size: 18px;
+			background-color: #E0DDDD;
+			border-radius: 5px;
+		}
+		#searchnavright, #searchnavleft{
+			display: none;
+		}
+		#label-search{
+			position: relative;
+			margin-top: 10px;
+			padding-bottom: 10px;
+			color: #4D4F50;
+		}
+		#search-icon{
+			width: 20px;
+			height: 20px;
+			float: right;
+		}
+		.icons{
+			display: block;
+			color: #0C69B3;
+			float: right;
+			margin-right: 10px; 
+		
+			i{
+				font-size: 30px;
+				margin-left: 10px;
+			}
+		}
+		.nav{
+			background-color: #0C69B3;
+			width: 100%;
+			height: 40px;
+			text-align: center;
+		
+			.nav-bar{
+				background-color: #1681AF;
+				width: 95%;
+				height: 40px;
+			
+				ul{
+					margin: 0;
+					width: 90%;
+					padding: 0;
+					display: flex;
+					justify-content: space-between;
+				
+					li{
+						margin: 10px;
+					
+						a{
+							color: white;
+						}
+					}
+				}
+			}
+		}
+		.div-images{
+			position: relative;
+			direction: flex;
+			padding: 15px;
+
+		}
+		.images{
+			display: block;
+			margin-bottom: 2px;
+			margin-top: 10px;
+		}
+		.image2{
+			/*position: absolute;*/
+			width: 49%;
+			float: left;
+		}
+		.image3{
+			/*position: absolute;*/
+			width: 49%;
+			float: right;
+		}
+		.recipe-cuisines{
+	    	margin-top: 250px;
+		}
+		.list ul{
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+			margin-right: 300px;
+		}
+		.post{
+			width: 95%;
+			height: 400px;
+			position: relative;
+			background-color: white;
+			margin-bottom: 5px;
+			padding: 10px;
+
+		}
+	}
+	@media screen and (min-width: 790px) {
+		#logo{
+			content: url("../images/logo.png") !important;
+			width: 50%;
+			float: left;
+		}
+		#menu{
+			display: none;
+
+		}
+		#search{
+			display: none;
+		}
+		
+		#search-icon{
+			width: 20px;
+			height: 20px;
+			float: right;
+		}
+		.icons{
+			display: block;
+			color: #0C69B3;
+			float: right;
+			margin-right: 10px; 
+		
+			i{
+				font-size: 30px;
+				margin-left: 10px;
+			}
+		}
+		.nav{
+			background-color: #0C69B3;
+			width: 100%;
+			height: 40px;
+			text-align: center;
+		
+			.nav-bar{
+				background-color: #1681AF;
+				width: 95%;
+				height: 40px;
+				display: inline-flex;
+				position: relative;
+			
+				ul{
+					margin: 0 10px;
+					width: 70%;
+					padding: 0;
+					display: flex;
+					justify-content: space-between;
+				
+					li{
+						margin: 10px;
+					
+						a{
+							color: white;
+						}
+					}
+				}
+			}
+		}
+		#searchnavleft{
+			display: none;
+		}
+		#searchnavright{
+			width: 30%;
+			height: 39px;
+			position: relative;
+			padding: 5px;
+			display: block;
+			float: right;
+			font-size: 18px;
+			background-color: #E0DDDD;
+			border-radius: 5px;
+		}
+		#label-search{
+			position: relative;
+			margin-top: 10px;
+			padding-bottom: 10px;
+			color: #4D4F50;
+		}
+		.post{
+			width: 95%;
+			height: 450px;
+			position: relative;
+			background-color: white;
+			margin-bottom: 5px;
+			padding: 10px;
+
+		}
+		.image-recipe-cuisines{
+			display: flex;
+			position: relative;
+			width: 100%;
+			z-index: 1;
+		}
+		.images{
+			width: 70%;
+			
+
+		}
+		.recipe-cuisines{
+			width: 30%;
+			margin-top: 10px;
+			margin-right: 10px;
+		}
+		#post{
+			width: 66%;
+			float: left;
+			position: absolute;
+			top: 540px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.list ul{
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+			margin-right: 10px;
+		
+			li{
+				/*float: left;*/
+				margin-right: 140px;
+			}
+		}
+		#post1{
+			width: 66%;
+			float: left;
+			position: absolute;
+			top: 1000px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.old-posts{
+			position: absolute;
+			top: 1450px;
+
+		}
+		.footer{
+			position: absolute;
+			top: 1560px;
+			
+		}
+	}
+	@media screen and (min-width: 1060px) {
+		.header{
+			width: 80vw;
+			text-align: center;
+			display: inline-block;
+			margin-left: 10%;
+		}
+		.container{
+			width: 85vw;
+			display: inline-block;
+			text-align: center;
+			margin-left: 8%;
+			
+		}
+		.nav-container{
+			width: 84vw;
+			margin-left: 1%;
+			
+
+			
+
+
+		}
+		.nav .nav-bar ul li:hover{
+			background-color: white;
+			height: 40px;
+			margin: 0;
+			padding: 0;
+
+		}
+		.nav .nav-bar ul li a:hover{
+			color: blue;
+
+	
+			
+			
+		}
+	}
+
+
